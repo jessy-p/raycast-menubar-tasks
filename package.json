@@ -15,7 +15,17 @@
       "name": "show-tasks-in-menubar",
       "title": "Show Tasks in Menubar",
       "description": "Shows the tasks from the markdown file in menubar",
-      "mode": "no-view"
+      "mode": "menu-bar"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "markdownFilePath",
+      "title": "Markdown File Path",
+      "description": "The full path to the markdown file containing tasks",
+      "type": "textfield",
+      "required": true,
+      "placeholder": "/path/to/your/tasks.md"
     }
   ],
   "dependencies": {
