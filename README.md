@@ -4,13 +4,15 @@ A Raycast extension that displays tasks from a markdown file in your menubar.
 
 ## Features
 
-- Displays tasks from a markdown file in your menubar
-- Groups tasks by sections (markdown headers)
-- Shows task completion status
-- Allows toggling task completion status directly from the menubar
-- Handles markdown links within tasks
-- Quick access to edit your tasks by clicking on section titles or summary
-- Ability to hide sections from the menubar display
+* Displays tasks from a markdown file in your menubar
+* Groups tasks by sections (markdown headers)
+* Shows task completion status
+* Allows toggling task completion status directly from the menubar
+* Handles markdown links within tasks
+* Quick access to edit your tasks by clicking on section titles or summary
+* Ability to hide sections from the menubar display
+
+![App preview](screenshot.png)
 
 ## Setup
 
@@ -33,14 +35,15 @@ The extension expects tasks to be formatted as:
 ```
 
 Each task should:
-- Start with `- [ ]` for incomplete tasks or `- [x]` for completed tasks
-- Be grouped under markdown headers (# Section Title)
+* Start with `- [ ]` for incomplete tasks or `- [x]` for completed tasks
+* Be grouped under markdown headers (# Section Title)
 
 ### Ignoring Sections
 
-You can hide entire sections from appearing in the menubar by prefixing the section title with `IGNORE`:
+You can hide entire sections from appearing in the menubar by prefixing the section title with `IGNORE` :
 
 ```markdown
+
 ## IGNORE Archive
 
 - [x] Completed task that won't show in menubar
@@ -48,12 +51,13 @@ You can hide entire sections from appearing in the menubar by prefixing the sect
 ```
 
 This is useful for:
-- Archiving completed tasks
-- Hiding reference or someday/maybe tasks
-- Keeping personal tasks separate from work tasks
-- Maintaining low-priority tasks in the same file without cluttering the menubar
+* Archiving completed tasks
+* Hiding reference or someday/maybe tasks
+* Keeping personal tasks separate from work tasks
+* Maintaining low-priority tasks in the same file without cluttering the menubar
 
 Example organization:
+
 ```markdown
 # Daily Tasks
 - [ ] Current high-priority tasks
@@ -70,14 +74,13 @@ Example organization:
 
 ### Tasks with Links
 
-When a task contains a markdown link (e.g., `- [ ] Check [docs](https://example.com)`):
+When a task contains a markdown link (e.g., `- [ ] Check [docs](https://example.com)` ):
 
-- The task is displayed as a submenu in the menubar
-- The link text is shown with a ↗ icon
-- The submenu has two options:
-  - **Open Link**: Opens the URL in your default browser
-  - **Mark as Complete/Incomplete**: Toggles the task completion status
-
+* The task is displayed as a submenu in the menubar
+* The link text is shown with a ↗ icon
+* The submenu has two options:
+  + **Open Link**: Opens the URL in your default browser
+  + **Mark as Complete/Incomplete**: Toggles the task completion status
 
 ## License
 
