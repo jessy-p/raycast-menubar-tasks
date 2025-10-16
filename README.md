@@ -12,7 +12,7 @@ A Raycast extension that displays tasks from a markdown file in your menubar.
 * Quick access to edit your tasks by clicking on section titles or summary
 * Ability to hide sections from the menubar display
 
-![App preview](screenshot.png)
+![App preview](./assets/screenshot.png)
 
 ## Setup
 
